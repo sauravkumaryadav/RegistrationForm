@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Information</h2>
+
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <span id="firstNameError" class="error"></span><br>
+
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        <span id="lastNameError" class="error"></span><br>
+
+        <input type="email" id="email" name="email" placeholder="Email ID" required>
+        <span id="emailError" class="error"></span><br>
+
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Phone Number" required>
+        <span id="phoneError" class="error"></span><br>
+
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <span id="passwordError" class="error"></span><br>
+
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+        <span id="confirmPasswordError" class="error"></span><br>
+
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
